@@ -29,7 +29,6 @@ body{
     color:red;
     margin-top: -5px;
     border-radius: 4px;
-    align-content: center;
 
 }
 .days{
@@ -38,6 +37,7 @@ body{
     font-size: 22px;
     border-radius: 4px;
     text-align: center;
+    box-shadow: 5px 10px red;
 }
 
 
@@ -46,6 +46,8 @@ body{
     padding: 11px;
     font-size: 22px;
     text-align: center;
+    border-radius: 4px;
+    box-shadow: 5px 10px red;
 }
 .mins{
     background-color: rgb(177, 174, 170);
@@ -53,6 +55,7 @@ body{
     font-size: 22px;
     border-radius: 4px;
     text-align: center;
+    box-shadow: 5px 10px red;
 }
 
 .secs{
@@ -61,6 +64,7 @@ body{
     font-size: 22px;
     border-radius: 4px;
     text-align: center;
+    box-shadow: 5px 10px red;
 }
 
 
