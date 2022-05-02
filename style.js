@@ -29,10 +29,4 @@ function countdown() {
     secs_el.innerHTML = offerSecs;
 }
 
-function resetOfferDate() {
-    const futureDate = new Date();
-    futureDate.setDate(futureDate.getDate() + 15);
-    return futureDate;
-}
-
 setInterval(countdown, 1000);
