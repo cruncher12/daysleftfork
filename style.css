@@ -69,8 +69,9 @@ gap: 7rem;
 
 h3{
     color:lightseagreen;
+    text-align: center;
 }
 
 p{
-    text-align: left;
+    text-align: center;
 }
