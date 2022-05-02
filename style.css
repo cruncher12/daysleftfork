@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Verdana&display=swap');
 
 body{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Verdana', sans-serif;
     align-content: center;
     text-align: center;
     background-color:rgb(102, 102, 102);
@@ -31,6 +31,7 @@ gap: 7rem;
     gap: 30px;
     color:red;
     margin-top: -5px;
+    border-radius: 2px;
 
 }
 .days{
