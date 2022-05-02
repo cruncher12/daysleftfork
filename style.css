@@ -40,6 +40,7 @@ gap: 7rem;
     padding: 11px;
     font-size: 22px;
     border-radius: 4px;
+    text-align: center;
 }
 
 
@@ -47,12 +48,14 @@ gap: 7rem;
     background-color: rgb(177, 174, 170);
     padding: 11px;
     font-size: 22px;
+    text-align: center;
 }
 .mins{
     background-color: rgb(177, 174, 170);
     padding: 11px;
     font-size: 22px;
     border-radius: 4px;
+    text-align: center;
 }
 
 .secs{
@@ -60,6 +63,7 @@ gap: 7rem;
     padding: 11px;
     font-size: 22px;
     border-radius: 4px;
+    text-align: center;
 }
 
 
