@@ -38,6 +38,7 @@ gap: 7rem;
     background-color: rgb(177, 174, 170);
     padding: 11px;
     font-size: 22px;
+    border-radius: 2px;
 }
 
 
@@ -50,21 +51,19 @@ gap: 7rem;
     background-color: rgb(177, 174, 170);
     padding: 11px;
     font-size: 22px;
+    border-radius: 2px;
 }
 
 .secs{
     background-color: rgb(177, 174, 170);
     padding: 11px;
     font-size: 22px;
+    border-radius: 2px;
 }
 
 
 h3{
     color:lightseagreen;
-}
-
-.offer{
-    flex-basis: 6rem;
 }
 
 p{
