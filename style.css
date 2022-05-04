@@ -41,3 +41,7 @@ h2 {
 .waiting {
   height: 50vh;
 }
+
+h2 {
+  text-align: center;
+}
