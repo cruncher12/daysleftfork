@@ -10,7 +10,7 @@ const countdown = () => {
   const day = hour * 24;
 
   const textDay = Math.floor(remainingTime / day);
-  const textHour = toString(parseInt((Math.floor(remainingTime % day) / hour) - 9));
+  const textHour = Math.floor(remainingTime % day) / hour;
   const textMinute = Math.floor((remainingTime % hour) / minute);
   const textSecond = Math.floor((remainingTime % minute) / second);
 
