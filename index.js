@@ -14,7 +14,7 @@ const countdown = () => {
   const textMinute = Math.floor((remainingTime % hour) / minute);
   const textSecond = Math.floor((remainingTime % minute) / second);
 
-  document.querySelector(".day").innerText = textDay > 0 ? textDay : 0;
+  document.querySelector(".day").innerText = (textDay > 0 ? textDay) - 9 : 0;
   document.querySelector(".hour").innerText = textHour > 0 ? textHour : 0;
   document.querySelector(".minute").innerText = textMinute > 0 ? textMinute : 0;
   document.querySelector(".second").innerText = textSecond > 0 ? textSecond : 0;
