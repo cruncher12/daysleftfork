@@ -37,6 +37,8 @@ h2 {
 .minute,
 .second {
   font-size: 3rem;
+  background-color: black;
+  opacity: 0.4;
 }
 
 .waiting {
