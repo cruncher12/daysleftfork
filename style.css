@@ -22,7 +22,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   background-image: url("./example1.jpg");
-  background-size: 100%;
+  background-size: 85%;
 }
 
 .countdown {
