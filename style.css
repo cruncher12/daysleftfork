@@ -23,6 +23,7 @@ h2 {
   justify-content: center;
   background-image: url("./example1.jpg");
   background-size: 100%;
+  background-repeat: none;
 }
 
 .countdown {
