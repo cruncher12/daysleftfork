@@ -1,47 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>School Countdown</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-  <link rel="stylesheet" href="style.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
 </head>
 
 <body>
-  <section class="coming-soon">
-    <div>
-      <h2>EVMS 🇺🇦</h2>
-      <h2><a href="https://daysleftevms.vercel.app/8th/">8th Grade Countdown (Click here)</a></h2>
-      <h2>Counting down the days…</h2>
-      <br><h3>This isn't actually the number of days left, it is actually the exact time till June 8th at 1:30 PM.</h3><br>
-      <h3>This includes weekends</h3>
-      <div class="countdown">
-        <div class="container-day">
-          <h3 class="day">Time</h3>
-          <h3>Days</h3>
-        </div>
-        <div class="container-hour">
-          <h3 class="hour">Time</h3>
-          <h3>Hours</h3>
-        </div>
-        <div class="container-minute">
-          <h3 class="minute">Time</h3>
-          <h3>Minutes</h3>
-        </div>
-        <div class="container-second">
-          <h3 class="second">Time</h3>
-          <h3>Seconds</h3>
-        </div>
-      </div>
-    </div>
-    <br>
-      </div>
-    </div>
-    <!-- <img class="waiting" src="./images/example1.jpg" /> -->
-  </section>
-  <script src="index.js"></script>
+
+<style type="text/css">
+
+#countdown {
+
+font-family:verdana, Geneva, sans-serif;
+
+font-size: x-large;
+
+text-align: center;
+
+}
+
+#countdown-header {
+
+font-family:verdana, Geneva, sans-serif;
+
+font-size: x-large;
+
+text-align: center;
+
+}
+
+</style>
+
+<div>
+
+<p id="countdown-header">Go-Live Countdown</p>
+
+
+
+<p id="countdown"></p>
+
+<script>
+
+// Set the date we're counting down to
+
+
+
+var countDownDate = new Date("Jul 1, 2020 00:00:01").getTime();
+
+
+
+// Update the count down every 1 second
+
+var x = setInterval(function() {
+
+
+
+// Get today's date and time
+
+var now = new Date().getTime();
+
+
+
+// Find the distance between now and the count down date
+
+var distance = countDownDate - now;
+
+
+
+// Time calculations for days, hours, minutes and seconds
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+
+// Display the result in the element with id="demo"
+
+document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+
++ minutes + "m " + seconds + "s ";
+
+
+
+// If the count down is finished, write some text
+
+if (distance < 0) {
+
+clearInterval(x);
+
+document.getElementById("countdown").innerHTML = "EXPIRED";
+
+}
+
+}, 1000);
+
+</script>
+
+
+
+</div>
+
+
+
 </body>
 
 </html>
