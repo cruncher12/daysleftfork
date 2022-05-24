@@ -99,6 +99,23 @@ document.getElementById("countdown").innerHTML = "EXPIRED";
 }
 
 }, 1000);
+  
+    // exclude weekends ..
+  var numWorkingDays = 0; // count of M,T,W,T,F days 
+  var today = new Date(); // start date for the loop
+  for (var x = 0; x <= days; x++) {
+    // get the next day's date ...
+    var nextDay = new Date();
+    nextDay.setDate(today.getDate() + x);
+    // getDay() returns weekday in numbers. 0 = Sunday, 6 = Saturday.
+    if (nextDay.getDay() == 0 || nextDay.getDay() == 6) {
+      // do nothing.
+      // console.info("Is a weekend: ", nextDay.getDate());
+    } else {
+      // is a M,T,W,T,F .. increment numWorkingDays by 1.
+      // console.info("Not a weekend: ", nextDay.getDate());
+      numWorkingDays++;
+    }
 
 </script>
 
